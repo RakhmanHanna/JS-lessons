@@ -91,3 +91,43 @@ let myInfo = {
   }
 console.log(myInfo); //возвращ {name: 'Ivan', age: 22}
 console.log(typeof myInfo); // возвр object
+
+// Преобразование типов
+// Строковое 
+//imp: с пом спец функции string можно изменить тип данных на строковый
+
+let myAge = 22;     //тип данных Number
+let myTrue = true   //тип данных boolean
+console.log(myAge); // 22 тип number
+console.log(myTrue); //тип boolean
+
+myAge = String(myAge) //
+console.log(myAge);  // возвр 22 с типом string
+
+//Численное
+//imp: с пом функции Number можно изменитиь тип данных на числовой
+
+const myAge = '22'; // тип данных string
+console.log(myAge); //возвращ строку 22
+
+myAge = Number(myAge);
+myAge = +myAge; // краткое преобразов в числовой тип данных
+
+// warning: если в строке нет чисел? результатом будет NaN (сломанное число)
+let myName = 'Ivan'; // тип данных string
+myName = Number(myName); //преобр строк тип данных в числовой
+console.log(myName);  //вернет NaN
+console.log(typeof myName); //вернет Number
+
+// * Логическое преобразование
+// imp: с пом спец функции Boolean() можно измениить тип данных на логич
+
+let myAge = 22;  // тип данных number - true
+let myAge = 0;   // тип данных number 
+let myAge = '0'  // тип данных string 
+let myAge = '';  // тип данных string 
+let myAge = ' ';  // тип данных string 
+
+
+myAge = Boolean(myAge);
+console.log(myAge);  

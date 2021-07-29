@@ -2,7 +2,7 @@
 
 // 1.
 
-let value = prompt('Введите число', 0);
+let value = +prompt('Введите число', 0);
 
 if (value > 0) {
     alert("Значение больше нуля");
@@ -10,5 +10,7 @@ if (value > 0) {
     alert("Значение меньше нуля");
 } else if (value == 0) {
     alert("Значение равно нулю");
+} else {
+    alert(value);
 }
 

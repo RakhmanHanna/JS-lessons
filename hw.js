@@ -5,7 +5,7 @@ let age = prompt('Возраст');
 if (age >= 14 && age <= 90);
 
 //2.
-let userName = prompt("Логин?", '');
+let userName = prompt('Логин?', '');
 if (userName == 'Админ') {
   let pass = prompt('Пароль?', '');
   if (pass == '123456') {

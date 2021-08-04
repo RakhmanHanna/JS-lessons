@@ -23,9 +23,11 @@ console.log(`Your number is: ${findMin(-50, 4)}`);
 // * 3
 // todo: Написать функцию, которая возвращает чётное ли число.
 
-// const isEven = (number) => {
-// 	… ваш код здесь
-// };
+// const isEven = (number) 
+    number = 12;
+    if (isEven % 2) {
+        alert(isEven);
+    }
 // console.log(isEven(12));
 
 // * 4

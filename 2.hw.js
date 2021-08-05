@@ -3,32 +3,30 @@
 // * 1
 // todo: Найти гипотенузу прямоугольного треугольника по теореме Пифагора.
 const calculateHypotenuse = (leg1, leg2) => {
-    return 3**2 + 4**2;
+    return leg1**2 + leg2**2;
 }
-console.log(`Your answer is: ${calculateHypotenuse(3, 4)}`);
+console.log(`Your answer is: ${calculateHypotenuse(2, 5)}`);
 
 // * 2
 // todo: Написать функцию, которая возвращает меньшее из чисел.
 
-const findMin = (-50, 4);
-    function min() {
-        if (-50 < 4) {
+const findMin = (arg1, arg2) => {
+    // function min() {
+        if (arg1 < arg2) {
             return -50;
         } else {
             return 4;
         }
     }
-console.log(`Your number is: ${findMin(-50, 4)}`);
+console.log(`Your number is: ${findMin(-52, 6)}`);
 
 // * 3
 // todo: Написать функцию, которая возвращает чётное ли число.
 
-// const isEven = (number) 
-    number = 12;
-    if (isEven % 2) {
-        alert(isEven);
-    }
-// console.log(isEven(12));
+const isEven = (number) => {
+    return !(number % 2)
+}
+console.log(isEven(12));
 
 // * 4
 // todo: Написать функцию, которая удаляет первый и последний элемент строки.

@@ -74,7 +74,7 @@ console.log(party); // возвр [solo, dread, nexus, ns]
 
 // shift - удаление первого элемента в массиве
 // добавление первого элемента в массивы
-// второй элемент стан первым
+// второй элемент стал первым
 let party = ['solo', 'dread', 'nexus'];
 party.shift();
 console.log(party); // dread, nexus

@@ -97,3 +97,103 @@ for (let i = 0; i<=Array.lenght; i++); {
     if (value === array[i]) return i;
 }
 return -1;
+
+// Редактирование элементов массивов
+// метод splice
+// Позволяет удалять / добавлять / изменять элементы массива.
+// Метод splice измен исх массив !!!
+
+// *** Удаление элемента
+let party = ['Solo', 'Dread', 'Nexus'];
+// party.splice(индекс, кол-во элементов)
+ party.splice(1, 1) //начиная с первой позиции удаляет 1 элемент
+console.log(party); // 'Solo', 'Nexus'
+
+//также можно использ отриц знач метода splice
+
+let party = ['Solo', 'Dread', 'Nexus'];
+party.splice(-1,1); // начиная с первой позиции с конца удаляет один элемент
+console.log(party); // Solo, Dread
+
+
+// *** удаление элементов с сохранением их в переменную
+let party = ['Solo', 'Dread', 'Nexus'];
+let newParty = party.splice(1,1); // начиная с первой позиции удаляет 1 элемент
+console.log(newParty);  //'Dread'
+
+// *** Замена элемента массива другим элементом
+let party = ['Solo', 'Dread', 'Nexus']; 
+// party.splice(индекс, кол заменяемых элементовб нов элемент)
+party.splice(1,1,'NS')
+console.log(party); // Solo, NS, Nexus
+
+// *** Добавление элементов
+let party = ['Solo', 'Dread', 'Nexus'];
+// party.splice(индекс, 0 - означает добавление, новые элементы)
+party.splice(1,0,'NS','Flash'); //начиная с первой позиции добавляет один элемент
+console.log(party); // Solo, NS, Flash, Dread, Nexus
+
+// *** Метод slice
+// создает нов массив? в который дублирует часть изнач массива либо весь массив
+// * Копирование части массива
+let party = ['Solo', 'Dread', 'Nexus'];
+// psrty.slice(индекс нач позиции, индекс конечн позиции не включая)
+let newParty = party.slice(1,2); // копир начиная с первой позиции до второй позиции не включая
+console.log(newParty); // Dread
+// можно использ отриц знач, отсчет будет идти справа налево
+
+let party = ['Solo', 'Dread', 'NS', 'Nexus'];
+let newParty = party.slice(1,-1);  // копир начиная с перволй позиции до последней не включая
+console.log(newParty); // Dread, NS
+
+
+// ** Копирование всего массива
+let party = ['Solo', 'Dread', 'Nexus'];
+let newParty = party.slice(); // не принимает никаких значений, полностью дублирует массив
+console.log(newParty); // 'Solo', 'Dread', 'Nexus'
+
+
+// ** метод concat
+// создает дубль массива, может дополнять новыми значениями
+let party = ['Solo', 'Dread', 'Nexus'];
+let newParty = party.concat('Flash'); //создает новый массив, копируя все значения и добавляя новые в конец
+console.log(newParty); // 'Solo', 'Dread', 'Nexus', 'Flash'
+
+// Аналогичный результат, но с использованием spresd
+let newParty = party(...party,'Flash'); 
+console.log(newParty); // 'Solo', 'Dread', 'Nexus', 'Flash'
+
+// ** метод sort
+// сортирует массив, меняя в нем порядок элементов (по алфавиту)
+let party = ['Solo', 'Dread', 'NS', 'Nexus'];
+console.log(party.sort()); //  'Dread','Nexus' 'NS', 'Solo', 
+
+// для сортировки можно использ стрелочную функцию
+let numberArray = [1,4,2,5,3];
+console.log(umberArray.sort((a, b) => a - b));
+
+// ** метод reverse
+// меняет порядок в массиве на обратно
+let party = ['Solo', 'Dread', 'NS', 'Nexus'];
+console.log(party.reverse()); // Nexus NS Dread Solo
+
+
+// *** Метод map
+// вызывает функцию для каждого элемента массива и возвращает НОВЫЙ МАССИВ (и ничего больше) с рез-ом выполнения функции
+let party = ['Solo', 'Dread', 'NS', 'Nexus'];
+//party.map(элемент массива, индекс, сам массив) => {})
+let newArray = party.map(item => item[0]); // возвращ первую (0 индекс) букву каждого элемента массива
+console.log(newArray); // возвращ первую букву каждого элемента (S D N N)
+
+//*** метод split и join
+
+
+
+
+
+
+
+
+// ** Перебор элементов массива
+// * Цикл for
+

@@ -187,13 +187,56 @@ console.log(newArray); // возвращ первую букву каждого 
 
 //*** метод split и join
 
+//** split("") - преобразует строку в массив по заданному разделителю
+let stringParty = 'Solo, Dread,Nexus';  // строка из слов, разделенных друг от друга запятой
+let arrayParty = stringParty.split(","); // запятая явл разделителем
+console.log(arrayParty);                 // возвращ массив ("Solo", "Dread", "Nexus")
+
+// можно ограничить количество элементов, котор попадут в массив
+
+let stringParty = 'Solo, Dread,Nexus';
+let arrayParty = stringParty.split(",", 2); // 2 элемента попадут в новый массив
+console.log(arrayParty);            // возвращ массив "Solo", "Dread"
 
 
+//** join("") - преобразует массив в строку с заданным разделителем
+let arrayParty = ['Solo', 'Dread', 'Nexus'];
+let stringParty = arrayParty.join(";");  // точка с запятой явл разделителем
+console.log(stringParty);      // возвращает строку "Solo;Dread;Nexus"
 
+//* Проверка
+// Массив не явл отдельным типом данных, значит typeof выдаст тип object
+// проверить, что массив явл массивом можно с помощью Array.isArray();
 
-
+let party = ["Solo", "Dread", "Nexus"];
+if (Array.isArray(party)) {
+    console.log("Это массив");
+}  else {
+    console.log("404");
+}
 
 
 // ** Перебор элементов массива
 // * Цикл for
 
+let party = ["Solo", "Dread", "Nexus"];
+for(let i = 0; i < party.length; i++) {   //  возвращ значение кажд элемента массива, пока i меньше длины массива
+    console.log(party[i]);              // поочередно возвращ Solo Dread Nexus
+};
+
+// * Цикл for of 
+// используется для вывода значений массива
+
+let party = ["Solo", "Dread", "Nexus"];
+for(let partyItem of party) {   // возвращ значение кажд элемента массива
+    console.log(partyItem);     // поочередно возвращ Solo Dread Nexus
+};
+
+
+// ** Метод forEach
+// выполняет функцию для каждого элемента массива
+let party = ["Solo", "Dread", "Nexus"];
+// party.forEach((элемент массива, индекс, сам массив) => {})
+party.forEach((item, index, array) => {
+    console.log(`${item} имеет ${} в ${array}`);
+});

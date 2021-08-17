@@ -10,7 +10,7 @@ Function
 
 // * undefined 
 // Неопределенный тип
-// important: Переменная вернет ndefined если она была объявлена, но не определена.
+// important: Переменная вернет undefined если она была объявлена, но не определена.
 
  let userName //Переменная объявлена, но не определена (не присвоено знач)
  console.log(typeof userName); //возвращ тип данных undefined
@@ -27,7 +27,7 @@ Function
  // important: Тип данных Bollean может принимать 2 знач: true, false.
 
  let trueOrFalse = 60 < 10;
- console.log(rueOrFalse);    // возвращ false
+ console.log(trueOrFalse);    // возвращ false
 
  //important: Можно использовать для проверки
 
@@ -43,14 +43,14 @@ Function
  // important: Тип данных может принимать целые числа и числа с плавающей запятой
 
  let myAge = 22;
- let myHeight = 1.79;
+ let myHeigth = 1.79;
 
  //warning: Спец значения infinity и -infinity
  let getInfinity = 58 / 0;
  let getMinusInfinity = -58 / 0;
- console.log(etInfinity); //возвращает знач Infinity
+ console.log(getInfinity); //возвращает знач Infinity
  console.log(typeof getInfinity); // возвращает number
-  // warning: спец знач Nan (not a number)
+  // warning: спец знач NaN (not a number)
   // результат неправильной матем операции
 
   let getNan = 'string' / 10;  
@@ -75,10 +75,10 @@ Function
   console.log(myFullName);          // возвр Anna Rakhman
   console.log(typeof myFullName);   // возвр string
 
-  //warning: Обратные кавычки позволяют встраив в строку доп функцианал
+  //warning: Обратные кавычки позволяют встраив в строку доп функционал
   let myAge = 22;
   let myName = 'Ivan';
-  console.log(`Hello, I'am ${myName}, my age is ${myName}`); // Возвращает строку Hello, I'am Ivan< my age is 22
+  console.log(`Hello, I'am ${myName}, my age is ${myName}`); // Возвращает строку Hello, I'am Ivan, my age is 22
 
   // * Object
   // Объект сод более сложную структуру данных
@@ -113,14 +113,14 @@ console.log(myAge); //возвращ строку 22
 myAge = Number(myAge);
 myAge = +myAge; // краткое преобразов в числовой тип данных
 
-// warning: если в строке нет чисел? результатом будет NaN (сломанное число)
+// warning: если в строке нет чисел, результатом будет NaN (сломанное число)
 let myName = 'Ivan'; // тип данных string
 myName = Number(myName); //преобр строк тип данных в числовой
 console.log(myName);  //вернет NaN
 console.log(typeof myName); //вернет Number
 
 // * Логическое преобразование
-// imp: с пом спец функции Boolean() можно измениить тип данных на логич
+// imp: с пом спец функции Boolean() можно изменить тип данных на логич
 
 let myAge = 22;  // тип данных number - true
 let myAge = 0;   // тип данных number 

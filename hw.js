@@ -9,14 +9,14 @@ let userName = prompt('Логин?', '');
 if (userName == 'Админ') {
   let pass = prompt('Пароль?', '');
   if (pass == '123456') {
-    alert( 'Добро пожаловать!' );
+    alert('Добро пожаловать!');
   } else if (pass == '' || pass == null) {
-    alert( 'Вход отменен' );
+    alert('Вход отменен');
   } else {
-    alert( 'Пароль неверен' );
+    alert('Пароль неверен');
   }
 } else if (userName == '' || userName == null) {
-  alert( 'Вход отменен' );
+  alert('Вход отменен');
 } else {
-  alert( "Пользователь не найден" );
+  alert('Пользователь не найден');
 }

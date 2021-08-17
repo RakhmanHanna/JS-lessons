@@ -25,7 +25,7 @@ const myAge = 15;
 let myFullName;
 let myLifeStyle;
 
-//Присваивание значение переменной
+//Присваивание значения переменной
 
 let myFullName;              //Обьяыление без присваивания значения переменной
 myFullName = 'Anna Rakhman'  //Присваивание значение
@@ -54,6 +54,6 @@ myAge = 18;
  console.log(myAge);
 
 let admin, name;
-name = 'Fedr';
+name = 'Fedor';
 admin = name;
 console.log(admin);

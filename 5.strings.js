@@ -5,7 +5,7 @@
 
 let myName = 'Ivan';
 let myAge = 22;
-console.log(`Hello, im $(myName), my age is $(myAge)`);
+console.log(`Hello, im ${myName}, my age is ${myAge}`);
 
 //* строковое преобразование
 // с пом спец функции string можно изменить тип данных на строковый
@@ -15,10 +15,9 @@ let myTrue = true; // тип данных boolean
 console.log(myAge); //22
 console.log(typeof myAge); // number
 console.log(myTrue); // true
-console.log(typeof myTrue);  //boolean
+console.log(typeof myTrue); //boolean
 
-myAge = String(myAge)
-
+myAge = String(myAge);
 
 // * работа с символами строки
 // ** свойство lenght
@@ -35,7 +34,7 @@ console.log(parrot[3]); // возвр п
 
 // если нужно получить посл символ в строке произв длины
 let parrot = '38 попугаев';
-console.log(parrot[parrot.length- 1]); // возвращ 'в'
+console.log(parrot[parrot.length - 1]); // возвращ 'в'
 
 // * изменение регистра
 // toUpperCase() метод позвол измен регистр на верхний
@@ -43,7 +42,6 @@ let parrot = '38 попугаев';
 console.log(parrot.toUpperCase()); // возвр '38 ПОПУГАЕВ'
 
 // * toLowerCase() позв изменить регистр на нижний
-
 
 // * поиск в строке
 // ** .indexOf(substring, position)

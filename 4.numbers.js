@@ -1,5 +1,5 @@
 // запись числа
-// тип данных number может принимать целые числа и числа с плав. запятойы
+// тип данных number может принимать целые числа и числа с плав. запятой
 
 let myAge = 22;
 let myHeight = 1.79;
@@ -19,17 +19,16 @@ let numThree = Math.floor(-2.2)  //-3
 // * Math.ceil
 // округляет число в большую сторону
 
-
-let numOne = Math.floor(5.8);  // 6
-let numTwo = Math.floor(2.2);  // 3
-let numThree = Math.floor(-2.2) //-2
+let numOne = Math.ceil(5.8);  // 6
+let numTwo = Math.ceil(2.2);  // 3
+let numThree = Math.ceil(-2.2) //-2
 
 // * Math.round
 // округл число до ближ целого
 
-let numOne = Math.floor(5.8);  // 6
-let numTwo = Math.floor(2.2);  // 2
-let numThree = Math.floor(-2.2) //-2
+let numOne = Math.round(5.8);  // 6
+let numTwo = Math.round(2.2);  // 2
+let numThree = Math.round(-2.2) //-2
 
 // ** Метод toFixed(n)
 // округл число до n знаков после запятой, но возвращает СТРОКОВЫЙ результат

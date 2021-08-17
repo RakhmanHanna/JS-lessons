@@ -72,3 +72,87 @@ let sortArray = (array) => {
   return newArr.sort(sortObj);
 };
 console.log(sortArray(initialData));
+
+// * 8
+// todo: Преобразуйте массив в объект используя функцию reduce.
+
+const videos = [
+  {
+    id: 65432445,
+    title: 'The Chamber',
+  },
+  {
+    id: 675465,
+    title: 'Fracture',
+  },
+  {
+    id: 70111470,
+    title: 'Die Hard',
+  },
+  {
+    id: 654356453,
+    title: 'Bad Boys',
+  },
+];
+
+let transformArrayToObj = (array) => {
+  let targetObj = array.reduce((object, item, index) => {
+    object[index] = item;
+    return object;
+  }, {});
+  return targetObj;
+};
+
+console.log(transformArrayToObj(videos));
+
+// * 4
+// todo: Функция принимает массив из числовых и строчных значений.
+// todo: Результатом функции является новый массив объектов.
+// todo: Каждый элемент нового массива должен сожержать поля значения, индекса, типа данных (number или string).
+[12, 'test', 'user', 15, 0]
+arr.map(item, index) => {
+    return {
+        value: item,
+        index: index,
+        type: typeof item,
+    };
+};
+// или
+arr.map((item, index)) => (
+    {
+        value: item,
+        index,
+        type: typeof item,
+    }
+)
+
+//9
+const boxarts = [
+	{
+		width: 200,
+		height: 200,
+		url: "http://cdn-0.nflximg.com/images/2891/Fracture200.jpg"
+	},
+	{
+		width: 150,
+		height: 200,
+		url: "http://cdn-0.nflximg.com/images/2891/Fracture150.jpg"
+	},
+	{
+		width: 300,
+		height: 200,
+		url: "http://cdn-0.nflximg.com/images/2891/Fracture300.jpg"
+	},
+	{
+		width: 425,
+		height: 150,
+		url: "http://cdn-0.nflximg.com/images/2891/Fracture425.jpg"
+	}
+];
+// let arr = [];
+// let getBiggestSquare = (array) => {
+//     letNewArr = array (item) => item.width * item.height
+//     newArr.reduce(a, b) = {
+
+//     }
+// }

@@ -20,3 +20,11 @@ if (userName == 'Админ') {
 } else {
   alert('Пользователь не найден');
 }
+
+/// 4
+while (true) {
+  let val = +prompt();
+  if (val === null) break;
+  const li = createElement('li');
+  ul.uppend(li);
+}

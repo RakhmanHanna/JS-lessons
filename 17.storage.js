@@ -27,7 +27,7 @@
 // important!
 // value в storage мб только типа string
 
-//* Соытие storage
+//* Событие storage
 // когда обновляются данные в localStorage/sessionStorage генерир событие storage:
 window.onstorage = (e) => {};
 
@@ -53,6 +53,9 @@ const save = () => {
         main.innerHTML = 'Добро пожаловать' + localStorage.getItem('name');
     }
 }
+
+
+
 
 // 2
 

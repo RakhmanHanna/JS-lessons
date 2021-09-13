@@ -14,14 +14,14 @@
 const originalTitle = document.title; //возвр Simple page
 
 //задание заголовка документа
-document.title = 'New page title'; //новый заголшовок страницы
+document.title = 'New page title'; //новый заголовок страницы
 
 //  получение полного url адреса
 const url = document.url;
 
 //* получение элемента
 //**  метод getElementById
-// принимает идентификатор элемента, кот нужно получить, и возвращ этот элемент или null если его рне сущ
+// принимает идентификатор элемента, кот нужно получить, и возвращ этот элемент или null если его не сущ
 
 <div id="myDiv">text</div>;
 // этот элемент можно получить след образом
@@ -42,7 +42,7 @@ document.getElementsByClassName('class');
 //1
 1;
 document.querySelector('#my-first-elem');
-document.getElementBy('my-first-elem');
+document.getElementById('my-first-elem');
 2;
 document.querySelectorAll('.container');
 document.getElementsByClassName('container');
@@ -63,7 +63,7 @@ block.classList.add('new-class');
 
 //* Стили и их изменение при помощи js
 // у любого html элемента есть свойство style, доступное при пом js
-// каждое css сыойство можно определить при пом
+// каждое css свойство можно определить при пом
 // свойства, кот в css пишутся через дефис - в js использ CamelCase
 // background-color ==> backgroundColor
 
@@ -102,24 +102,24 @@ p.after(div);
 
 //2
 const ol = document.createElement('ol');
-const arr = [.....] .forEach((item,index) => {
-    const li = document.createElement('li') .classList.add(index % 2 ? 'odd' : 'even');
-    li.innerText = item;
-    if (li.contains('odd')) li.style.backgroundColor = 'blue';
-    if (li.contains('even')) li.style.backgroundColor = 'green';
-    if ([...new Set(item.split(''))].join('').length !== item.length)
+const arr = [].forEach((item, index) => {
+  const li = document
+    .createElement('li')
+    .classList.add(index % 2 ? 'odd' : 'even');
+  li.innerText = item;
+  if (li.contains('odd')) li.style.backgroundColor = 'blue';
+  if (li.contains('even')) li.style.backgroundColor = 'green';
+  if ([...new Set(item.split(''))].join('').length !== item.length)
     li.style.Color = 'white';
-    return li;
-})
+  return li;
+});
 
 //3
-function shoqMessage (text, color, top, left) {
-    const div = document.createElement('div').classList.add('message')
-    div.innerText = text;
-    div.style.color = color;
-    div.style.position = 'Fixed';
-    div.style.top = top;
-    div.style.left = left;
-    
+function shoqMessage(text, color, top, left) {
+  const div = document.createElement('div').classList.add('message');
+  div.innerText = text;
+  div.style.color = color;
+  div.style.position = 'Fixed';
+  div.style.top = top;
+  div.style.left = left;
 }
-

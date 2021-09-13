@@ -77,42 +77,22 @@ dog.eat();
 
 
 
-//2 hw
-function Figure() {
-    this.drawCircle = function () {}
-    this.drawSquare = function () {}
-    this.drawRectangle = function () {}
+//2 hw (14 презентация)
+class Figure {
+    constructor(color, width, height) {
+        this.color = color,
+        this.width = width,
+        this.height = height,
+    }
+    getSquare() {
+        return this.width * this.height
+    }
 }
 
-let circle = {
-    color: blue,
-    size: 50px,
-    position: absolute,
-    drawCircle: true,
-    culcArea: true,
+class Rectangle  extends Fig {
+    constructor(color, width, height) {
+        super(color, width, height)
+    }
 }
-Circle.prototype = new Figure();
-let circle = new Circle();
-circle.drawCircle();
-
-let square = {
-    color: yellow,
-    size: 30px,
-    position: absolute,
-    drawSquare: true,
-    culcArea: true,
-}    
-Square.prototype = new Figure();
-let square = new Square();
-square.drawSquare();
-
-let rectangle = {
-    color: orange,
-    size: 15px,
-    position: fixed,
-    drawRectangle: true,
-    culcArea: true,
-}
-Rectangle.prototype = new Figure();
-let rectangle = new Rectangle();
-rectangle.drawRectangle();
+let rect = new Rectangle();
+rect.getSquareFigure();

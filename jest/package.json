@@ -1,0 +1,21 @@
+{
+  "name": "jest-training",
+  "version": "1.0.0",
+  "description": "Jest intro",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "jest",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

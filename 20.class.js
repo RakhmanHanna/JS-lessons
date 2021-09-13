@@ -199,3 +199,10 @@ let Adult = new Adult('Max', 30, apple);
 Adult.go();
 Adult.speak();
 Adult.eat();
+
+//7 (15 презентация)
+class Ball {
+  constructor(type) {
+    this.ballType = type ? type : 'regular';
+  }
+}
